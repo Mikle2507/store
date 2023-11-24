@@ -1,5 +1,29 @@
-@custom-media --xs-viewport (max-width: 599px);
-@custom-media --s-viewport (max-width: 767px);
-@custom-media --m-viewport (max-width: 1023px);
-@custom-media --l-viewport (max-width: 1439px);
-@custom-media --xl-viewport (max-width: 1919px);
+@mixin _1200 {
+  @media (width >= 1200px) {
+    @content;
+  }
+}
+
+@mixin _1199 {
+  @media (width < 1200px) {
+    @content;
+  }
+}
+
+@mixin _991 {
+  @media (width < 992px) {
+    @content;
+  }
+}
+
+@mixin _767 {
+  @media (width < 768px) {
+    @content;
+  }
+}
+
+@mixin _575 {
+  @media (width < 576px) {
+    @content;
+  }
+}
